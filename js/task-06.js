@@ -31,7 +31,7 @@ inputRef.addEventListener("blur", validationСheck);
 function validationСheck() {
   const inputValidationValue = inputRef.value;
 
-  if (inputValidationValue.length > inputRef.dataset.length) {
+  if (String(inputValidationValue.length) === inputRef.dataset.length) {
     inputRef.classList.add("valid");
     inputRef.classList.remove("invalid");
   } else {

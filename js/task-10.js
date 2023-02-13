@@ -56,4 +56,5 @@ destroyBtn.addEventListener("click", () => {
 });
 function destroyBoxes() {
   boxRef.innerHTML = "";
+  inputNumberRef.value = "";
 }
